@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Magnifier View Controller-->
+        <scene sceneID="Fw7-nn-Fuf">
+            <objects>
+                <viewController storyboardIdentifier="MagnifierViewController" id="CCV-b1-VSw" customClass="MagnifierViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Ed-ad-FXL"/>
+                        <viewControllerLayoutGuide type="bottom" id="VvR-WO-AOP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KYX-A3-4m6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifier.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="36h-2k-18d">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="36h-2k-18d" firstAttribute="top" secondItem="5Ed-ad-FXL" secondAttribute="bottom" id="BcL-2I-Rj1"/>
+                            <constraint firstItem="36h-2k-18d" firstAttribute="leading" secondItem="KYX-A3-4m6" secondAttribute="leading" id="ahv-0l-77O"/>
+                            <constraint firstItem="VvR-WO-AOP" firstAttribute="top" secondItem="36h-2k-18d" secondAttribute="bottom" id="exn-Pi-k4e"/>
+                            <constraint firstAttribute="trailing" secondItem="36h-2k-18d" secondAttribute="trailing" id="x6x-jF-qKQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Brw-Dd-CgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifier.jpg" width="366" height="220"/>
+    </resources>
+</document>
